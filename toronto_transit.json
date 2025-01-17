@@ -1,0 +1,217 @@
+{
+	"version": 8,
+	"name": "toronto-transit",
+	"metadata": {
+		"maputnik:renderer": "mbgljs"
+	},
+	"glyphs": "https://tiles.versatiles.org/assets/fonts/{fontstack}/{range}.pbf",
+	"sprite": "https://tiles.versatiles.org/assets/sprites/sprites",
+	"sources": {
+		"versatiles-shortbread": {
+			"type": "vector",
+			"url": "https://vector.openstreetmap.org/shortbread_v1/tilejson.json"
+		},
+		"ontario_line": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "ontario_line",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+					{ "type": "Feature", "properties": { }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.386606216430678, 43.650919736389511 ], [ -79.367208480834961, 43.654832132050906 ], [ -79.364547729492188, 43.65334172566218 ], [ -79.36248779296875, 43.649801862243315 ], [ -79.360427856445327, 43.649180812060614 ], [ -79.358539581298828, 43.649242917367864 ], [ -79.356307983398438, 43.649926071509249 ], [ -79.349098205566406, 43.653714330727105 ], [ -79.346866607666016, 43.65582571576045 ], [ -79.346094131469727, 43.657378157395058 ], [ -79.345064163208008, 43.663277069564252 ], [ -79.343776702880859, 43.665636472152286 ], [ -79.340686798095703, 43.669299571356085 ], [ -79.351243972778335, 43.695803812248464 ], [ -79.353389739990249, 43.7026297058718 ], [ -79.353132247924819, 43.704180936956504 ], [ -79.350385665893555, 43.706848960528667 ], [ -79.34987068176271, 43.707593504052944 ], [ -79.349956512451172, 43.709268693169143 ], [ -79.349012374877915, 43.709951164201257 ], [ -79.337854385375977, 43.712308731611245 ], [ -79.336652755737319, 43.715224541963515 ], [ -79.338884353637695, 43.720373392481044 ] ], [ [ -79.386606216430678, 43.650919736389511 ], [ -79.401884078979506, 43.647503944490964 ], [ -79.403085708618164, 43.646510223099845 ], [ -79.403257369995117, 43.645764921268125 ], [ -79.402141571044922, 43.642535173141063 ], [ -79.402742385864258, 43.640547549525422 ], [ -79.415359497070312, 43.636944814118415 ] ] ] } }
+				]			
+			}
+		},
+		"ontario_line_stations": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "ontario_line_stations",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.396133422851562, 43.648932390189458 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.345064163208008, 43.679666792813556 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.386606216430678, 43.650919736389511 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.345664978027358, 43.659799886201199 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.369525909423842, 43.654521633770251 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.338884353637695, 43.720497455709157 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.342489242553711, 43.667437006475801 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.415359497070312, 43.636944814118415 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.336309432983413, 43.714418055421199 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.402742385864258, 43.643963736998053 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.3487548828125, 43.689349525435347 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.34360504150392, 43.707469414107791 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.364376068115234, 43.652099692082601 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.347467422485366, 43.655204727868515 ] } },
+				{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ -79.378967285156264, 43.65253440675734 ] } }
+				]			
+			}
+		}	
+	},
+	"layers": [
+		{
+			"id": "background",
+			"type": "background",
+			"paint": {
+				"background-color": "#eee"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "water-ocean",
+			"type": "fill",
+			"source-layer": "ocean",
+			"paint": {
+				"fill-color": "#fff"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "water-area",
+			"type": "fill",
+			"source-layer": "water_polygons",
+			"filter": [ "in", "kind", "water", "river" ],
+			"paint": {
+				"fill-color": "#fff",
+				"fill-opacity": { "stops": [ [ 4, 0 ], [ 6, 1 ] ] }
+			}
+		},
+
+		{
+			"source": "versatiles-shortbread",
+			"id": "street-other",
+			"type": "line",
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "residential" ] ],
+			"paint": {
+				"line-color": "#fff",
+				"line-width": { "stops": [ [ 12, 1 ], [ 18, 6 ] ] },
+				"line-opacity": { "stops": [ [ 12, 0.5 ], [ 13, 1 ] ] }
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "street",
+			"type": "line",
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ] ],
+			"paint": {
+				"line-color": "#fff",
+				"line-width": { "stops": [ [ 12, 4 ], [ 18, 24 ] ] },
+				"line-opacity": 1
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "transport",
+			"type": "line",
+			"source-layer": "streets",
+			"filter": [ "all", [ "in", "kind", "monorail", "funicular", "tram", "narrow_gauge", "subway", "light_rail", "rail" ] ],
+			"minzoom": 13,
+			"paint": {
+				"line-width": { "stops": [ [ 12, 0 ], [ 18, 3 ] ] },
+				"line-color": "#fff"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "bridge",
+			"type": "line",
+			"source-layer": "streets",
+			"filter": [ "all", [ "==", "bridge", true ], [ "!=", "kind", "footway" ], [ "!=", "kind", "path" ] ],
+			"paint": {
+				"line-color": "#fff",
+				"line-width": 6,
+				"line-opacity": 1
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "butt"
+			}
+		},
+		{
+			"source": "ontario_line",
+			"id": "ontario_line",
+			"type": "line",
+			"paint": {
+				"line-color": "#ff0000",
+				"line-width": { "stops": [ [ 12, 6 ], [ 18, 12 ] ] },
+				"line-opacity": 1
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			}
+		},
+		{
+			"source": "ontario_line_stations",
+			"id": "ontario_line_stations",
+			"type": "circle",
+			"paint": {
+				"circle-radius": { "stops": [ [ 12, 4 ], [ 18, 16 ] ] },
+				"circle-color": "#FF0000",
+				"circle-opacity": 1,
+				"circle-stroke-width": 3,
+				"circle-stroke-color": "#FFFFFF",
+				"circle-pitch-scale": "map",
+				"circle-pitch-alignment": "map"
+			}
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "label-street-other",
+			"type": "symbol",
+			"source-layer": "street_labels",
+			"filter": [ "in", "kind", "residential" ],
+			"layout": {
+				"text-field": "{name}",
+				"text-font": [ "noto_sans_regular" ],
+				"text-transform": "uppercase",
+				"symbol-placement": "line",
+				"text-anchor": "center",
+				"text-size": 6,
+				"text-letter-spacing": 0.3
+			},
+			"paint": {
+				"icon-color": "#333",
+				"text-color": "#333",
+				"text-halo-color": "rgba(255, 255, 255, 0.8)",
+				"text-halo-width": 1,
+				"text-halo-blur": 1
+			},
+			"minzoom": 12
+		},
+		{
+			"source": "versatiles-shortbread",
+			"id": "label-street",
+			"type": "symbol",
+			"source-layer": "street_labels",
+			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
+			"layout": {
+				"text-field": "{name}",
+				"text-font": [ "noto_sans_regular" ],
+				"text-transform": "uppercase",
+				"symbol-placement": "line",
+				"text-anchor": "center",
+				"text-size": { "stops": [ [ 12, 6 ], [ 18, 10 ] ] },
+				"text-letter-spacing": 0.3
+			},
+			"paint": {
+				"icon-color": "#333",
+				"text-color": "#333",
+				"text-halo-color": "rgba(255, 255, 255, 0)",
+				"text-halo-width": 1,
+				"text-halo-blur": 1
+			},
+			"minzoom": 12
+		}
+	]
+}

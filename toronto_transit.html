@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  	<link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+  	<script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+	<style>
+		body { margin: 0; padding: 0; }
+		html, body, #map { height: 100%; }
+		#map { position: relative; }
+	</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+var map = new maplibregl.Map({
+	container: 'map',
+	style: 'toronto_transit.json',
+	center: [-79.38277381385024, 43.66712385412515],
+	zoom: 12,
+	minZoom: 12,
+	maxZoom: 18,
+	bearing: 0,
+	pitch: 40,
+	pixelRatio: 2,
+	hash: true
+});
+</script>
+</body>
+</html>
