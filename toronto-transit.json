@@ -299,7 +299,7 @@
 			"id": "ontario-line",
 			"type": "line",
 			"paint": {
-				"line-color": "#ff0000",
+				"line-color": "#333",
 				"line-width": { "stops": [ [ 12, 6 ], [ 18, 12 ] ] },
 				"line-opacity": 1
 			},
