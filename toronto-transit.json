@@ -158,6 +158,51 @@
 				{ "type": "Feature", "properties": { "station": "Dupont" }, "geometry": { "type": "Point", "coordinates": [ -79.407119750976577, 43.674824840428272 ] } }
 				]
 			}
+		},
+		"eglinton-crosstown": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "eglinton-crosstown",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { "name": "Eglinton Crosstown LRT" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.453125, 43.694840261278436 ], [ -79.464626312255845, 43.692142330944982 ], [ -79.470376968383775, 43.691211410224895 ], [ -79.487285614013672, 43.687363451285826 ] ], [ [ -79.264554977416992, 43.732282290922633 ], [ -79.26876068115233, 43.732034213020391 ], [ -79.300603866577163, 43.724839506847843 ], [ -79.304723739624023, 43.724653425396461 ], [ -79.31553840637207, 43.726204086496111 ], [ -79.319057464599609, 43.725955983417613 ], [ -79.33038711547853, 43.723102724156377 ], [ -79.354162216186538, 43.715782872442347 ], [ -79.435958862304688, 43.698844533569719 ], [ -79.453125, 43.694833594450991 ] ] ] } }
+				]
+			}
+		},
+		"eglinton-crosstown-stations": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "eglinton-crosstown-stations",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { "station": "Caledonia" }, "geometry": { "type": "Point", "coordinates": [ -79.464626312255845, 43.692142330944982 ] } },
+				{ "type": "Feature", "properties": { "station": "Mount Dennis" }, "geometry": { "type": "Point", "coordinates": [ -79.487285614013672, 43.687363451285826 ] } },
+				{ "type": "Feature", "properties": { "station": "Keelesdale" }, "geometry": { "type": "Point", "coordinates": [ -79.475097656249986, 43.690156349273934 ] } },
+				{ "type": "Feature", "properties": { "station": "Chaplin" }, "geometry": { "type": "Point", "coordinates": [ -79.417333602905288, 43.702753805835684 ] } },
+				{ "type": "Feature", "properties": { "station": "Hakimi Lebovic" }, "geometry": { "type": "Point", "coordinates": [ -79.291505813598633, 43.727072439178528 ] } },
+				{ "type": "Feature", "properties": { "station": "Eglinton" }, "geometry": { "type": "Point", "coordinates": [ -79.398622512817383, 43.706662823202585 ] } },
+				{ "type": "Feature", "properties": { "station": "Cedarvale" }, "geometry": { "type": "Point", "coordinates": [ -79.435958862304688, 43.698844533569719 ] } },
+				{ "type": "Feature", "properties": { "station": "Birchmount" }, "geometry": { "type": "Point", "coordinates": [ -79.277944564819336, 43.730049552808595 ] } },
+				{ "type": "Feature", "properties": { "station": "Forest Hill" }, "geometry": { "type": "Point", "coordinates": [ -79.425573348999038, 43.701016382964191 ] } },
+				{ "type": "Feature", "properties": { "station": "Sunnybrook Park" }, "geometry": { "type": "Point", "coordinates": [ -79.349956512451172, 43.717085623329119 ] } },
+				{ "type": "Feature", "properties": { "station": "Ionview" }, "geometry": { "type": "Point", "coordinates": [ -79.271163940429688, 43.73141401376899 ] } },
+				{ "type": "Feature", "properties": { "station": "Aga Khan Park & Museum" }, "geometry": { "type": "Point", "coordinates": [ -79.333992004394531, 43.722048224384956 ] } },
+				{ "type": "Feature", "properties": { "station": "Leaside" }, "geometry": { "type": "Point", "coordinates": [ -79.377164840698256, 43.711067918218824 ] } },
+				{ "type": "Feature", "properties": { "station": "Wynford" }, "geometry": { "type": "Point", "coordinates": [ -79.325323104858398, 43.724405315895488 ] } },
+				{ "type": "Feature", "properties": { "station": "Fairbank" }, "geometry": { "type": "Point", "coordinates": [ -79.450206756591797, 43.695617640627653 ] } },
+				{ "type": "Feature", "properties": { "station": "O'Connor" }, "geometry": { "type": "Point", "coordinates": [ -79.302577972412109, 43.724653425396461 ] } },
+				{ "type": "Feature", "properties": { "station": "Kennedy" }, "geometry": { "type": "Point", "coordinates": [ -79.264554977416992, 43.732282290922633 ] } },
+				{ "type": "Feature", "properties": { "station": "Mount Pleasant" }, "geometry": { "type": "Point", "coordinates": [ -79.39021110534668, 43.708400082434665 ] } },
+				{ "type": "Feature", "properties": { "station": "Golden Mile" }, "geometry": { "type": "Point", "coordinates": [ -79.287643432617188, 43.72794077927287 ] } },
+				{ "type": "Feature", "properties": { "station": "Sloane" }, "geometry": { "type": "Point", "coordinates": [ -79.313478469848633, 43.725955983417613 ] } },
+				{ "type": "Feature", "properties": { "station": "Laird" }, "geometry": { "type": "Point", "coordinates": [ -79.364805221557617, 43.713549519314277 ] } },
+				{ "type": "Feature", "properties": { "station": "Avenue" }, "geometry": { "type": "Point", "coordinates": [ -79.408493041992188, 43.704615274467301 ] } },
+				{ "type": "Feature", "properties": { "station": "Pharmacy" }, "geometry": { "type": "Point", "coordinates": [ -79.297513961791992, 43.725707879311507 ] } },
+				{ "type": "Feature", "properties": { "station": "Oakwood" }, "geometry": { "type": "Point", "coordinates": [ -79.442825317382827, 43.697293164407093 ] } },
+				{ "type": "Feature", "properties": { "station": "Science Centre" }, "geometry": { "type": "Point", "coordinates": [ -79.338884353637695, 43.720497455709157 ] } }
+				]			}
 		}
 	},
 	"layers": [
@@ -292,6 +337,20 @@
 			}
 		},
 		{
+			"source": "eglinton-crosstown",
+			"id": "eglinton-crosstown",
+			"type": "line",
+			"paint": {
+				"line-color": "#f67f24",
+				"line-width": { "stops": [ [ 12, 6 ], [ 18, 12 ] ] },
+				"line-opacity": 1
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			}
+		},
+		{
 			"source": "ontario-line-stations",
 			"id": "ontario-line-stations",
 			"type": "circle",
@@ -322,6 +381,20 @@
 		{
 			"source": "yonge-university-stations",
 			"id": "yonge-university-stations",
+			"type": "circle",
+			"paint": {
+				"circle-radius": { "stops": [ [ 12, 4 ], [ 18, 8 ] ] },
+				"circle-color": "#fff",
+				"circle-opacity": 1,
+				"circle-stroke-width": 2,
+				"circle-stroke-color": "#333",
+				"circle-pitch-scale": "map",
+				"circle-pitch-alignment": "map"
+			}
+		},
+		{
+			"source": "eglinton-crosstown-stations",
+			"id": "eglinton-crosstown-stations",
 			"type": "circle",
 			"paint": {
 				"circle-radius": { "stops": [ [ 12, 4 ], [ 18, 8 ] ] },
