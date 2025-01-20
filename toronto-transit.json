@@ -47,6 +47,58 @@
 				]
 			}
 		},
+		"bloor-danforth": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "bloor-danforth",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { "name": "Bloor-Danforth" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.453125, 43.657055252840983 ], [ -79.484453201293945, 43.649801862243315 ], [ -79.487457275390611, 43.648435543364727 ], [ -79.490032196044922, 43.648373437222666 ], [ -79.495267868041992, 43.650112384926537 ], [ -79.499731063842773, 43.650671321710654 ], [ -79.526166915893555, 43.645019610189209 ], [ -79.527626037597642, 43.644460620811564 ], [ -79.536294937133789, 43.636944814118415 ] ], [ [ -79.264554977416992, 43.732282290922633 ], [ -79.267730712890625, 43.730793808095058 ], [ -79.274082183837891, 43.723971121796119 ], [ -79.275283813476577, 43.721862134263269 ], [ -79.278631210327148, 43.714231941600836 ], [ -79.281034469604492, 43.700209705230016 ], [ -79.281978607177734, 43.698223990721324 ], [ -79.284296035766602, 43.696548492951756 ], [ -79.292449951171861, 43.693445595677417 ], [ -79.299573898315444, 43.68972190701718 ], [ -79.309101104736342, 43.687301385409 ], [ -79.338283538818359, 43.68103240104945 ], [ -79.358024597167983, 43.677245865460129 ], [ -79.360685348510756, 43.675818093283411 ], [ -79.366607666015639, 43.674700682665431 ], [ -79.371929168701186, 43.6722795549464 ], [ -79.376134872436538, 43.672465799008023 ], [ -79.394502639770508, 43.669299571356085 ], [ -79.412956237792969, 43.665450206898392 ], [ -79.433298110961914, 43.660607107430899 ], [ -79.450120925903335, 43.657750737415114 ], [ -79.453125, 43.657057386241569 ] ] ] } }
+				]
+			}
+		},
+		"bloor-danforth-stations": {
+			"type": "geojson",
+			"data": {
+				"type": "FeatureCollection",
+				"name": "bloor-danforth-stations",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { "station": "Jane" }, "geometry": { "type": "Point", "coordinates": [ -79.484453201293945, 43.649801862243315 ] } },
+				{ "type": "Feature", "properties": { "station": "Kipling" }, "geometry": { "type": "Point", "coordinates": [ -79.536294937133789, 43.636944814118415 ] } },
+				{ "type": "Feature", "properties": { "station": "Old Mill" }, "geometry": { "type": "Point", "coordinates": [ -79.495096206665025, 43.650050280518322 ] } },
+				{ "type": "Feature", "properties": { "station": "Islington" }, "geometry": { "type": "Point", "coordinates": [ -79.524621963500977, 43.645330157595879 ] } },
+				{ "type": "Feature", "properties": { "station": "Keele" }, "geometry": { "type": "Point", "coordinates": [ -79.459819793701158, 43.655453123795901 ] } },
+				{ "type": "Feature", "properties": { "station": "Runnymede" }, "geometry": { "type": "Point", "coordinates": [ -79.476213455200195, 43.651664974261216 ] } },
+				{ "type": "Feature", "properties": { "station": "High Park" }, "geometry": { "type": "Point", "coordinates": [ -79.466257095336914, 43.6540248331819 ] } },
+				{ "type": "Feature", "properties": { "station": "Royal York" }, "geometry": { "type": "Point", "coordinates": [ -79.511318206787109, 43.64812501201223 ] } },
+				{ "type": "Feature", "properties": { "station": "Sherbourne" }, "geometry": { "type": "Point", "coordinates": [ -79.37682151794435, 43.6723416363645 ] } },
+				{ "type": "Feature", "properties": { "station": "Ossington" }, "geometry": { "type": "Point", "coordinates": [ -79.42591667175293, 43.662407792603659 ] } },
+				{ "type": "Feature", "properties": { "station": "Bathurst" }, "geometry": { "type": "Point", "coordinates": [ -79.411497116088867, 43.665698560441818 ] } },
+				{ "type": "Feature", "properties": { "station": "St. George" }, "geometry": { "type": "Point", "coordinates": [ -79.399309158325195, 43.668244125020109 ] } },
+				{ "type": "Feature", "properties": { "station": "Broadview" }, "geometry": { "type": "Point", "coordinates": [ -79.358797073364258, 43.676811329698303 ] } },
+				{ "type": "Feature", "properties": { "station": "Greenwood" }, "geometry": { "type": "Point", "coordinates": [ -79.330301284790039, 43.682832473505869 ] } },
+				{ "type": "Feature", "properties": { "station": "Main Street" }, "geometry": { "type": "Point", "coordinates": [ -79.301977157592773, 43.688977141541557 ] } },
+				{ "type": "Feature", "properties": { "station": "Chester" }, "geometry": { "type": "Point", "coordinates": [ -79.352273941040039, 43.678363228683914 ] } },
+				{ "type": "Feature", "properties": { "station": "Warden" }, "geometry": { "type": "Point", "coordinates": [ -79.279232025146484, 43.711192000714085 ] } },
+				{ "type": "Feature", "properties": { "station": "Kennedy" }, "geometry": { "type": "Point", "coordinates": [ -79.264554977416992, 43.732282290922633 ] } },
+				{ "type": "Feature", "properties": { "station": "Bloor-Yonge" }, "geometry": { "type": "Point", "coordinates": [ -79.385747909545913, 43.670975830331784 ] } },
+				{ "type": "Feature", "properties": { "station": "Spadina" }, "geometry": { "type": "Point", "coordinates": [ -79.40394401550293, 43.667250746808932 ] } },
+				{ "type": "Feature", "properties": { "station": "Dufferin" }, "geometry": { "type": "Point", "coordinates": [ -79.435443878173828, 43.660234545135012 ] } },
+				{ "type": "Feature", "properties": { "station": "Lansdowne" }, "geometry": { "type": "Point", "coordinates": [ -79.442653656005874, 43.659116844376214 ] } },
+				{ "type": "Feature", "properties": { "station": "Castle Frank" }, "geometry": { "type": "Point", "coordinates": [ -79.368495941162124, 43.673831571132908 ] } },
+				{ "type": "Feature", "properties": { "station": "Dundas West" }, "geometry": { "type": "Point", "coordinates": [ -79.452438354492202, 43.657191866518097 ] } },
+				{ "type": "Feature", "properties": { "station": "Christie" }, "geometry": { "type": "Point", "coordinates": [ -79.418363571166992, 43.664084244043032 ] } },
+				{ "type": "Feature", "properties": { "station": "Pape" }, "geometry": { "type": "Point", "coordinates": [ -79.345149993896484, 43.6797288665895 ] } },
+				{ "type": "Feature", "properties": { "station": "Bay" }, "geometry": { "type": "Point", "coordinates": [ -79.389867782592773, 43.670230832122307 ] } },
+				{ "type": "Feature", "properties": { "station": "Coxwell" }, "geometry": { "type": "Point", "coordinates": [ -79.323091506958022, 43.684322147798014 ] } },
+				{ "type": "Feature", "properties": { "station": "Donlands" }, "geometry": { "type": "Point", "coordinates": [ -79.337768554687514, 43.681156545711424 ] } },
+				{ "type": "Feature", "properties": { "station": "Woodbine" }, "geometry": { "type": "Point", "coordinates": [ -79.312963485717788, 43.686556589877945 ] } },
+				{ "type": "Feature", "properties": { "station": "Victoria Park" }, "geometry": { "type": "Point", "coordinates": [ -79.289445877075195, 43.694624715554944 ] } }
+				]
+			}
+		},
 		"yonge-university": {
 			"type": "geojson",
 			"data": {
@@ -212,6 +264,20 @@
 			}
 		},
 		{
+			"source": "bloor-danforth",
+			"id": "bloor-danforth",
+			"type": "line",
+			"paint": {
+				"line-color": "#00923f",
+				"line-width": { "stops": [ [ 12, 6 ], [ 18, 12 ] ] },
+				"line-opacity": 1
+			},
+			"layout": {
+				"line-join": "round",
+				"line-cap": "round"
+			}
+		},
+		{
 			"source": "yonge-university",
 			"id": "yonge-university",
 			"type": "line",
@@ -228,6 +294,20 @@
 		{
 			"source": "ontario-line-stations",
 			"id": "ontario-line-stations",
+			"type": "circle",
+			"paint": {
+				"circle-radius": { "stops": [ [ 12, 4 ], [ 18, 8 ] ] },
+				"circle-color": "#fff",
+				"circle-opacity": 1,
+				"circle-stroke-width": 2,
+				"circle-stroke-color": "#333",
+				"circle-pitch-scale": "map",
+				"circle-pitch-alignment": "map"
+			}
+		},
+		{
+			"source": "bloor-danforth-stations",
+			"id": "bloor-danforth-stations",
 			"type": "circle",
 			"paint": {
 				"circle-radius": { "stops": [ [ 12, 4 ], [ 18, 8 ] ] },
