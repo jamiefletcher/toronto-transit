@@ -266,7 +266,6 @@
 				"fill-opacity": { "stops": [ [ 4, 0 ], [ 6, 1 ] ] }
 			}
 		},
-
 		{
 			"source": "versatiles-shortbread",
 			"id": "street-other",
@@ -467,7 +466,7 @@
 				"symbol-placement": "line",
 				"text-anchor": "center",
 				"text-size": 6,
-				"text-letter-spacing": 0.3,
+				"text-letter-spacing": 0.2,
 				"symbol-sort-key": 1,
 				"text-allow-overlap": false
 			},
@@ -477,8 +476,7 @@
 				"text-halo-color": "rgba(255, 255, 255, 0.8)",
 				"text-halo-width": 1,
 				"text-halo-blur": 1
-			},
-			"minzoom": 14
+			}
 		},
 		{
 			"source": "versatiles-shortbread",
@@ -503,8 +501,7 @@
 				"text-halo-color": "rgba(255, 255, 255, 1)",
 				"text-halo-width": 100,
 				"text-halo-blur": 0
-			},
-			"minzoom": 14
+			}
 		}
 	]
 }
