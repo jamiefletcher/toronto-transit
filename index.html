@@ -8,7 +8,11 @@
 		body { margin: 0; padding: 0; }
 		html, body, #map { height: 100%; }
 		#map { position: relative; }
-	</style>
+		.maplibregl-map {color: #666; font-size: 8px;}
+		.maplibregl-popup-content { padding:0 4px; margin:0; pointer-events: none !important; }
+		.maplibregl-popup-content h3 { margin: 0; padding: 0; }
+		.maplibregl-popup-close-button { display: none !important; }
+</style>
 </head>
 <body>
 <div id="map"></div>
@@ -17,6 +21,7 @@ var map = new maplibregl.Map({
 	container: 'map',
 	style: 'toronto-transit.json',
 	center: [-79.38277381385024, 43.66712385412515],
+	pixelRatio: 1,
 	zoom: 12,
 	//minZoom: 12,
 	//maxZoom: 18,
@@ -24,6 +29,46 @@ var map = new maplibregl.Map({
 	pitch: 40,
 	hash: true
 });
+
+map.on('load', () => {
+    const allLayers = map.getStyle().layers;
+
+    allLayers.forEach(layer => {
+        if (layer.type === 'line') {
+            const source = map.getSource(layer.id);
+
+            if (source && source._data) {
+                source._data.features.forEach(feature => {
+                    const name = feature.properties.name || feature.properties.NAME || 'Unnamed';
+
+                    if (feature.geometry.type === 'LineString') {
+                        const coordinates = getMidpoint(feature.geometry.coordinates);
+
+                        new maplibregl.Popup({ closeOnClick: false })
+                            .setLngLat(coordinates)
+                            .setHTML(`<h3>${name}</h3>`)
+                            .addTo(map);
+
+                    } else if (feature.geometry.type === 'MultiLineString') {
+                        feature.geometry.coordinates.forEach(line => {
+                            const coordinates = getMidpoint(line);
+
+                            new maplibregl.Popup({ closeOnClick: false })
+                                .setLngLat(coordinates)
+                                .setHTML(`<h3>${name}</h3>`)
+                                .addTo(map);
+                        });
+                    }
+                });
+            }
+        }
+    });
+});
+
+function getMidpoint(coordinates) {
+    const midIndex = Math.floor(coordinates.length / 2);
+    return coordinates[midIndex];
+}
 </script>
 </body>
 </html>
