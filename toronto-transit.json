@@ -461,7 +461,7 @@
 			"filter": [ "in", "kind", "residential" ],
 			"layout": {
 				"text-field": "{name}",
-				"text-font": [ "notosans" ],
+				"text-font": [ "montserrat-light" ],
 				"text-transform": "uppercase",
 				"symbol-placement": "line",
 				"text-anchor": "center",
@@ -486,7 +486,7 @@
 			"filter": [ "in", "kind", "motorway", "trunk", "primary", "secondary", "tertiary" ],
 			"layout": {
 				"text-field": "{name}",
-				"text-font": [ "notosans" ],
+				"text-font": [ "montserrat-light" ],
 				"text-transform": "uppercase",
 				"symbol-placement": "line",
 				"text-anchor": "center",
