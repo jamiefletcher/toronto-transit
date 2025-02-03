@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "barrie-stations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "station": "East Gwillimbury" }, "geometry": { "type": "Point", "coordinates": [ -79.455614089965806, 44.079261663600228 ] } },
+{ "type": "Feature", "properties": { "station": "Aurora" }, "geometry": { "type": "Point", "coordinates": [ -79.459562301635728, 43.999791716804978 ] } },
+{ "type": "Feature", "properties": { "station": "King City" }, "geometry": { "type": "Point", "coordinates": [ -79.526767730712876, 43.919164160219026 ] } },
+{ "type": "Feature", "properties": { "station": "Mulock" }, "geometry": { "type": "Point", "coordinates": [ -79.457845687866197, 44.040403811541374 ] } },
+{ "type": "Feature", "properties": { "station": "Kirby" }, "geometry": { "type": "Point", "coordinates": [ -79.524450302124023, 43.889356812525001 ] } },
+{ "type": "Feature", "properties": { "station": "Maple" }, "geometry": { "type": "Point", "coordinates": [ -79.50719833374022, 43.859596427702215 ] } },
+{ "type": "Feature", "properties": { "station": "Rutherford" }, "geometry": { "type": "Point", "coordinates": [ -79.498100280761719, 43.83749854985161 ] } },
+{ "type": "Feature", "properties": { "station": "Newmarket" }, "geometry": { "type": "Point", "coordinates": [ -79.459476470947266, 44.059527528906308 ] } },
+{ "type": "Feature", "properties": { "station": "York University" }, "geometry": { "type": "Point", "coordinates": [ -79.483423233032227, 43.778840708561106 ] } },
+{ "type": "Feature", "properties": { "station": "Caledonia" }, "geometry": { "type": "Point", "coordinates": [ -79.464626312255845, 43.692142330944982 ] } },
+{ "type": "Feature", "properties": { "station": "Downsview Park" }, "geometry": { "type": "Point", "coordinates": [ -79.478359222412095, 43.753613146195242 ] } },
+{ "type": "Feature", "properties": { "station": "Bloor-Lansdowne" }, "geometry": { "type": "Point", "coordinates": [ -79.44514274597168, 43.657750737415114 ] } },
+{ "type": "Feature", "properties": { "station": "Spadina-Front" }, "geometry": { "type": "Point", "coordinates": [ -79.395704269409194, 43.641417142948498 ] } }
+]
+}
