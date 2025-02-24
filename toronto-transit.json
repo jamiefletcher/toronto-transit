@@ -4,8 +4,8 @@
 	"metadata": {
 		"maputnik:renderer": "mbgljs"
 	},
-	"glyphs": "assets/fonts/{fontstack}/{range}.pbf",
-	"sprite": "assets/sprites/sprites",
+	"glyphs": "https://github.com/jamiefletcher/toronto-transit/assets/fonts/{fontstack}/{range}.pbf",
+	"sprite": "https://github.com/jamiefletcher/toronto-transit/assets/sprites/sprites",
 	"sources": {
 		"versatiles-shortbread": {
 			"type": "vector",
